@@ -1,4 +1,4 @@
 export class CidadeResponse {
-  codCidade: string;
-  nomeCidade: string;
+  codCidade: string = '';
+  nomeCidade: string = '';
 }

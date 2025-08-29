@@ -7,7 +7,7 @@ export class CidadeControllerRemove {
   @HttpCode(HttpStatus.OK)
   @Delete('/remover/:id')
   Delete(@Param('id') id: string) {
-    const response = this.cidadeServiceRemove.delete(id);
-    return response;
+
+    return this.cidadeServiceRemove.remove(id);
   }
 }

@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 export class CidadeServiceRemove {
   constructor() {}
 
-  delete(id: string) {
+  remove(id: string) {
     return `${id} removida com sucesso!!!`;
   }
 }

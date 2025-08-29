@@ -3,11 +3,13 @@ import { CidadeServiceFindall } from '../service/cidade.service.findall';
 
 @Controller('/cidade')
 export class CidadeControllerFindall {
-  constructor(private readonly cidadeServiceFindall: CidadeServiceFindall) {}
+  constructor(
+    private readonly cidadeServiceFindall: CidadeServiceFindall
+  ) {}
   @HttpCode(HttpStatus.OK)
   @Get('/listar')
-  findall() {
-    const response = this.cidadeServiceFindall.findall();
-    return response;
+  findAll() {
+
+    return this.cidadeServiceFindall.findAll();
   }
 }
