@@ -8,7 +8,7 @@ export class CidadeControllerCreate {
   @HttpCode(HttpStatus.CREATED)
   @Post('/criar')
   create(@Body() cidadeRequest: CidadeRequest) {
-    const response = this.cidadeService.create(cidadeRequest);
-    return response;
+
+    return this.cidadeService.create(cidadeRequest);
   }
 }

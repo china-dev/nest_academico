@@ -1,10 +1,13 @@
 import { Injectable } from '@nestjs/common';
+import { tabelaCidade } from './tabela.service';
 
 @Injectable()
 export class CidadeServiceFindOne {
+
+  private cidades = tabelaCidade;
   constructor() {}
 
-  findone(id: string) {
-    return `A cidade é ${id}`;
+  findOne(id: number) {
+    return this.cidades.find(c => c.idCidade === id);
   }
 }

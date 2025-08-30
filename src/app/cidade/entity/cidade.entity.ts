@@ -1,5 +1,5 @@
 export class Cidade {
-  idCidade: number = 0;
+  idCidade?: number;
   codCidade: string = '';
   nomeCidade: string = '';
 }
